@@ -1,0 +1,20 @@
+<script>
+    var mobil = { merk: "toyota",
+                  tipe: "MPV",
+                  harga: 2000000,
+                  warna: "merah",
+                  pergi: function (tempat) {return "pergi ke "+ tempat;}
+                  };
+    console.log(mobil.pergi("medan"));
+    mobil.pergi = "methodnya sudah tertimpa..";
+    // perulagan for in
+    var mobil = { merk: "toyota",
+    tipe: "mpv",
+    harga: 2000000,
+    warna:"hitam"};
+
+    var prop;
+    for (prop in mobil){
+        console.log(mobil[prop]);
+    }
+</script>
